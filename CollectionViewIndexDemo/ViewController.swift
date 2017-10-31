@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[topLayoutGuide][collectionViewIndex][bottomLayoutGuide]", options: [], metrics: nil, views: views))
     }
     
-    func selectedIndexDidChange(_ collectionViewIndex: CollectionViewIndex) {
+    @objc func selectedIndexDidChange(_ collectionViewIndex: CollectionViewIndex) {
         title = collectionViewIndex.indexTitles[collectionViewIndex.selectedIndex]
     }
     
